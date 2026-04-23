@@ -9,7 +9,7 @@ from ..database import get_db
 from ..models import Contact
 from ..schemas import ContactCreate, ContactResponse, ContactOut
 
-router = APIRouter(prefix="/api", tags=["contact"])
+router = APIRouter(prefix="/contact", tags=["contact"])
 security = HTTPBasic()
 
 ADMIN_PASSWORD = "luminara_admin_2025"
