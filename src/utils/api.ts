@@ -10,7 +10,7 @@ export interface ContactData {
 }
 
 export async function submitContact(data: ContactData) {
-  const res = await fetch(`${BASE_URL}/api/contact`, {
+  const res = await fetch(`${BASE_URL}/contact/contact`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
